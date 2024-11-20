@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package app;
 
-option  go_package = "k-lms.app.v1;appv1";
+option  go_package = "k-lms.app.v1;appv0.0.1";
 
 service Users {
   rpc RegisterBotUser(RegisterBotUserRequest) returns (RegisterBotUserResponse);
