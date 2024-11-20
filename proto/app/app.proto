@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package app;
+
+option  go_package = "k-lms.app.v1;appv1";
+
+service Users {
+  rpc RegisterBotUser(RegisterBotUserRequest) returns (RegisterBotUserResponse);
+}
+
+message RegisterBotUserRequest{
+  string user_name = 1;
+  int64 tg_user_id =2;
+}
+message RegisterBotUserResponse{
+  string error = 1;
+}
